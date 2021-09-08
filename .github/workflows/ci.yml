@@ -23,7 +23,7 @@ jobs:
       uses: jaywcjlove/create-tag-action@v1.2.1
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        package-path: ./packages/tsbb/package.json
+        package-path: ./package.json
 
     - name: Generate Changelog
       id: changelog
@@ -52,3 +52,6 @@ jobs:
           ${{ steps.changelog.outputs.compareurl }}
 
           ${{ steps.changelog.outputs.changelog }}
+
+    - run: npm install @jsdevtools/npm-publish -g
+    - run: npm-publish --token="${{ secrets.NPM_TOKEN }}" ./package.json
