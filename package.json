@@ -1,0 +1,47 @@
+{
+  "name": "create-antdp",
+  "version": "3.1.2",
+  "description": "Creates a antdp application using the command line.",
+  "homepage": "https://antdpro.github.io/antdp",
+  "author": "Kenny Wong <wowohoo@qq.com> (https://github.com/jaywcjlove)",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antdpro/antdp"
+  },
+  "bin": {
+    "create-antdp": "lib/cli.js"
+  },
+  "scripts": {
+    "build": "tsbb build --no-esm",
+    "watch": "tsbb watch --no-esm"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "jest": {},
+  "keywords": [
+    "dva",
+    "umi",
+    "ant-design",
+    "antd",
+    "antdp",
+    "tsbb",
+    "create-tsbb",
+    "react",
+    "redux",
+    "rematch",
+    "uiw",
+    "redux-saga",
+    "framework",
+    "frontend"
+  ],
+  "devDependencies": {
+    "tsbb": "^3.1.2"
+  },
+  "dependencies": {
+    "create-kkt": "2.3.0"
+  }
+}

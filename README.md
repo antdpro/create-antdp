@@ -1,0 +1,60 @@
+<p align="center">
+  <a href="https://github.com/antdpro/antdp">
+    <img width="200" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/antdpro/create-antdp/actions/workflows/ci.yml">
+    <img alt="Build & Deploy" src="https://github.com/antdpro/create-antdp/actions/workflows/ci.yml/badge.svg">
+  </a>
+  <a href="https://www.npmjs.com/package/create-antdp">
+    <img src="https://img.shields.io/npm/v/create-antdp.svg">
+  </a>
+</p>
+
+Creates a [`antdp`](https://github.com/antdpro/antdp) application using the command line.
+
+### Usage
+
+```shell
+# npm 6.x
+$ npm init antdp my-app --example antdp-base
+# npm 7+, extra double-dash is needed:
+$ npm init antdp my-app -- --example antdp-base
+
+$ yarn create antdp [appName]
+# or npm
+$ npm create antdp my-app
+# or npx
+$ npx create-antdp my-app
+```
+
+### Command Help
+
+Below is a help of commands you might find useful. The example download is from https://antdpro.github.io/antdp/zip/
+
+```bash
+Usage: create-antdp <app-name> [options] [--help|h]
+
+Options:
+  --version, -v Show version number
+  --help, -h Displays help information.
+  --output, -o Output directory.
+  --example, -e Example from: https://antdpro.github.io/antdp/zip/ , default: "antdp-base"
+  --force, -f Overwrite target directory if it exists. default: false
+  --path, -p Specify the download target git address. default: "https://antdpro.github.io/antdp/zip/"
+
+Example:
+  npx create-antdp my-app
+  yarn create antdp appName
+  npm create antdp my-app
+  npm create antdp my-app -f
+  npm create antdp my-app -p https://antdpro.github.io/antdp/zip/
+
+Copyright 2021
+```
+
+## License
+
+[MIT © Kenny Wong](https://github.com/jaywcjlove)
