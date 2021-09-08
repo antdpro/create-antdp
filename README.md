@@ -15,7 +15,7 @@
 
 Creates a [`antdp`](https://github.com/antdpro/antdp) application using the command line.
 
-### Usage
+## Usage
 
 ```shell
 # npm 6.x
@@ -30,7 +30,7 @@ $ npm create antdp my-app
 $ npx create-antdp my-app
 ```
 
-### Command Help
+## Command Help
 
 Below is a help of commands you might find useful. The example download is from https://antdpro.github.io/antdp/zip/
 
