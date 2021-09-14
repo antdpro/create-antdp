@@ -14,8 +14,10 @@
     "create-antdp": "lib/cli.js"
   },
   "scripts": {
-    "build": "tsbb build --no-esm",
-    "watch": "tsbb watch --no-esm"
+    "prepare": "husky install",
+    "build": "tsbb build --disable-babel",
+    "watch": "tsbb watch --disable-babel",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,md,json}'"
   },
   "files": [
     "lib",
@@ -39,6 +41,9 @@
     "frontend"
   ],
   "devDependencies": {
+    "pretty-quick": "3.1.1",
+    "prettier": "2.4.0",
+    "husky": "7.0.2",
     "tsbb": "3.2.1"
   },
   "dependencies": {
