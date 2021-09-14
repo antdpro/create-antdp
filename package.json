@@ -15,8 +15,8 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "build": "tsbb build --disable-babel",
-    "watch": "tsbb watch --disable-babel",
+    "build": "tsbb build --disable-babel --file-names src/cli.ts",
+    "watch": "tsbb watch --disable-babel --file-names src/cli.ts",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,md,json}'"
   },
   "files": [
