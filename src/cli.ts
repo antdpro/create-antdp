@@ -29,7 +29,10 @@ async function run(): Promise<void> {
         '    --example, -e',
         'Example from: \x1b[34mhttps://antdpro.github.io/antdp/zip/ \x1b[0m , default: "antdp-base"',
       );
-      console.log('    --force, -f', 'Overwrite target directory if it exists. default: false');
+      console.log(
+        '    --force, -f',
+        'Overwrite target directory if it exists. default: false',
+      );
       console.log(
         '    --path, -p',
         'Specify the download target git address. default: "\x1b[34mhttps://antdpro.github.io/antdp/zip/ \x1b[0m"',
