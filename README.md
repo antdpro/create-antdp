@@ -3,6 +3,7 @@
     <img width="200" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg">
   </a>
 </p>
+<!--rehype:style=min-height: 380px; display: flex; justify-content: center; align-items: center;-->
 
 <p align="center">
   <a href="https://github.com/antdpro/create-antdp/actions/workflows/ci.yml">
