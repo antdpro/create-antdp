@@ -11,8 +11,8 @@
   <a href="https://antdpro.github.io/create-antdp/lcov-report/">
     <img alt="Coverage Status" src="https://antdpro.github.io/create-antdp/badges.svg">
   </a>
-  <a href="https://www.npmjs.com/package/tsbb">
-    <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/tsbb.svg?style=flat">
+  <a href="https://www.npmjs.com/package/create-antdp">
+    <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/create-antdp.svg?style=flat">
   </a>
   <a href="https://uiwjs.github.io/npm-unpkg/#/pkg/create-antdp/file/README.md">
     <img alt="Open in unpkg" src="https://img.shields.io/badge/Open%20in-unpkg-blue">
