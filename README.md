@@ -8,6 +8,15 @@
   <a href="https://github.com/antdpro/create-antdp/actions/workflows/ci.yml">
     <img alt="Build & Deploy" src="https://github.com/antdpro/create-antdp/actions/workflows/ci.yml/badge.svg">
   </a>
+  <a href="https://antdpro.github.io/create-antdp/lcov-report/">
+    <img alt="Coverage Status" src="https://antdpro.github.io/create-antdp/badges.svg">
+  </a>
+  <a href="https://www.npmjs.com/package/tsbb">
+    <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/tsbb.svg?style=flat">
+  </a>
+  <a href="https://uiwjs.github.io/npm-unpkg/#/pkg/create-antdp/file/README.md">
+    <img alt="Open in unpkg" src="https://img.shields.io/badge/Open%20in-unpkg-blue">
+  </a>
   <a href="https://www.npmjs.com/package/create-antdp">
     <img src="https://img.shields.io/npm/v/create-antdp.svg">
   </a>
@@ -41,13 +50,13 @@ Options:
   --version, -v Show version number
   --help, -h Displays help information.
   --output, -o Output directory.
-  --example, -e Example from: https://antdpro.github.io/antdp/zip/ , default: "antdp-base"
+  --example, -e Example from: https://antdpro.github.io/antdp/zip/  , default: "antdp-base"
   --force, -f Overwrite target directory if it exists. default: false
   --path, -p Specify the download target git address. default: "https://antdpro.github.io/antdp/zip/"
 
 Example:
-  npx create-antdp my-app
   yarn create antdp appName
+  npx create-antdp my-app
   npm create antdp my-app
   npm create antdp my-app -f
   npm create antdp my-app -p https://antdpro.github.io/antdp/zip/

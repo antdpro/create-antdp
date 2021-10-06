@@ -17,13 +17,19 @@
     "prepare": "husky install",
     "build": "tsbb build --disable-babel --file-names src/cli.ts",
     "watch": "tsbb watch --disable-babel --file-names src/cli.ts",
-    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,md,json}'"
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,md,json}'",
+    "coverage": "tsbb test --coverage --detectOpenHandles",
+    "test": "tsbb test --detectOpenHandles"
   },
   "files": [
     "lib",
     "src"
   ],
-  "jest": {},
+  "jest": {
+    "testMatch": [
+      "<rootDir>/test/*.{ts,tsx}"
+    ]
+  },
   "keywords": [
     "dva",
     "umi",
