@@ -48,14 +48,16 @@ Below is a help of commands you might find useful. The example download is from 
 Usage: create-antdp <app-name> [options] [--help|h]
 
 Options:
-  --version, -v Show version number
-  --help, -h Displays help information.
-  --output, -o Output directory.
-  --example, -e Example from: https://antdpro.github.io/antdp/zip/  , default: "antdp-base"
-  --force, -f Overwrite target directory if it exists. default: false
-  --path, -p Specify the download target git address. default: "https://antdpro.github.io/antdp/zip/"
+
+  --version, -v   Show version number
+  --help, -h      Displays help information.
+  --output, -o    Output directory.
+  --example, -e   Example from: http://antdpro.github.io/antdp/, default: "antdp-base"
+  --path, -p      Specify the download target git address.
+                    default: "http://antdpro.github.io/antdp/"
 
 Example:
+
   yarn create antdp appName
   npx create-antdp my-app
   npm create antdp my-app
