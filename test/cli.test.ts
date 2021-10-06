@@ -44,4 +44,4 @@ it('create project. 1', async () => {
   await run();
   expect(await fs.existsSync(path.resolve(__dirname, 'my-app2'))).toBeTruthy();
   await fs.remove('test/my-app2');
-});
+}, 10000);
