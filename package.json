@@ -50,7 +50,7 @@
     "pretty-quick": "3.1.1",
     "prettier": "2.4.1",
     "husky": "7.0.2",
-    "tsbb": "3.4.1"
+    "tsbb": "3.4.4"
   },
   "dependencies": {
     "create-kkt": "3.0.0"
