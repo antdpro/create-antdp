@@ -47,7 +47,7 @@
     "frontend"
   ],
   "devDependencies": {
-    "pretty-quick": "3.1.1",
+    "pretty-quick": "3.1.2",
     "prettier": "2.4.1",
     "husky": "7.0.2",
     "tsbb": "3.4.4"
