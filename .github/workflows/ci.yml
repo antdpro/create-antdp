@@ -60,7 +60,7 @@ jobs:
 
             ${{ steps.changelog.outputs.changelog }}
 
-      - name: 📦 @uiw/react-amap publish to NPM
+      - name: 📦 create-antdp publish to NPM
         uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
