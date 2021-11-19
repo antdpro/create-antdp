@@ -60,5 +60,8 @@ jobs:
 
             ${{ steps.changelog.outputs.changelog }}
 
-      - run: npm install @jsdevtools/npm-publish -g
-      - run: npm-publish --token="${{ secrets.NPM_TOKEN }}" ./package.json
+      - name: 📦 @uiw/react-amap publish to NPM
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          package: ./package.json
