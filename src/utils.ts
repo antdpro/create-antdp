@@ -27,9 +27,6 @@ export async function run(): Promise<void> {
     console.log(`\n create-antdp v${version}\n`);
     return;
   }
-  // argvs.appName = argvs._[0];
-  // argvs.example = argvs.e = String(argvs.example).toLocaleLowerCase();
-  // await create(argvs, helpExample);
   argvs.appName = argvs._[0];
   argvs.example = argvs.e = String(argvs.example).toLocaleLowerCase();
   try {
