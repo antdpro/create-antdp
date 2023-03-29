@@ -14,7 +14,7 @@ export async function run(): Promise<void> {
       path: 'https://antdpro.github.io/antdp/zip/',
       output: '.',
       force: false,
-      example: 'antdp-base',
+      example: 'basic',
     },
   });
   if (argvs.h || argvs.help) {
