@@ -1,6 +1,7 @@
 import minimist from 'minimist';
 import { create } from 'create-kkt';
-
+import path from 'path';
+import fs from 'fs-extra';
 export async function run(): Promise<void> {
   const argvs = minimist(process.argv.slice(2), {
     alias: {
@@ -26,9 +27,43 @@ export async function run(): Promise<void> {
     console.log(`\n create-antdp v${version}\n`);
     return;
   }
+  // argvs.appName = argvs._[0];
+  // argvs.example = argvs.e = String(argvs.example).toLocaleLowerCase();
+  // await create(argvs, helpExample);
   argvs.appName = argvs._[0];
   argvs.example = argvs.e = String(argvs.example).toLocaleLowerCase();
-  await create(argvs, helpExample);
+  try {
+    await create(argvs, helpExample);
+    const pkgPath = path.join(
+      process.cwd(),
+      argvs.output,
+      argvs.appName,
+      'package.json',
+    );
+    if (fs.existsSync(pkgPath)) {
+      const pkg = require(pkgPath);
+      if (pkg.version) {
+        await fs.writeJSON(
+          pkgPath,
+          {
+            ...pkg,
+            name: argvs.appName || pkg.name,
+            version: '1.0.0',
+            scripts: {
+              ...pkg.scripts,
+              postinstall: 'umi setup',
+            },
+          },
+          { spaces: '  ' },
+        );
+      }
+    }
+  } catch (err) {
+    console.error(err);
+    process.exit(1);
+  }
+
+  // umiinstall
 }
 
 export const helpExample: string = `Example:
