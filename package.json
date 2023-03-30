@@ -47,10 +47,10 @@
     "frontend"
   ],
   "devDependencies": {
-    "pretty-quick": "3.1.2",
-    "prettier": "2.4.1",
-    "husky": "8.0.2",
-    "tsbb": "4.0.0"
+    "pretty-quick": "^3.1.3",
+    "prettier": "^2.8.7",
+    "husky": "^8.0.3",
+    "tsbb": "^4.0.6"
   },
   "dependencies": {
     "create-kkt": "3.0.0"
