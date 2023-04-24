@@ -48,7 +48,7 @@ export async function run(): Promise<void> {
             version: '1.0.0',
             scripts: {
               ...pkg.scripts,
-              postinstall: 'umi setup',
+              postinstall: 'max setup',
             },
           },
           { spaces: '  ' },
