@@ -46,10 +46,7 @@ export async function run(): Promise<void> {
             ...pkg,
             name: argvs.appName || pkg.name,
             version: '1.0.0',
-            scripts: {
-              ...pkg.scripts,
-              postinstall: 'max setup',
-            },
+            scripts: { ...pkg.scripts },
           },
           { spaces: '  ' },
         );
